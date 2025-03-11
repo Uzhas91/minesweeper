@@ -31,7 +31,11 @@ class Minesweeper:
         Any adjacent cells with no mines are also revealed. 
         Returns "Game Over" if a mine is revealed, "Continue" otherwise.
         """
-        pass
+        if (self.board[row][col] == '💣'):
+            return "Game Over"
+        else :
+            self.revealed.add((row, col))
+            return "Continue"
 
     def get_board(self) -> list:
         """ Return the current state of the board. """
