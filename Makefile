@@ -1,4 +1,4 @@
-tests :  
-	@echo "Running tests..."  
+tests :
+	@echo "Running tests..."
 	export PYTHONPATH=.
 	pytest -v
